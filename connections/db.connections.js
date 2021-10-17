@@ -15,7 +15,7 @@ const ToDo = ToDoModel(sequelize,Sequelize);
 
 sequelize.sync({force:false})
   .then(() => {
-    console.log(`Database & tables created!`)
+    console.log(`Database & tables created mother fuckerr!`)
   });
 
 module.exports = {

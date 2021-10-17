@@ -56,7 +56,8 @@ exports.findById = (req,res) => {
 }
 
 exports.giveAll = (req,res) =>{
-    todo.giveAll = ( (error,result) =>{
+
+    todo.alldata( "test",(error,result) =>{
 
         if(error){
             res.status(500).send({
@@ -72,4 +73,4 @@ exports.giveAll = (req,res) =>{
         }
 
     });
-};
+}

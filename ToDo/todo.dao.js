@@ -36,14 +36,10 @@ exports.findById = ( uuid , callback ) =>{
     })
 }
 
-exports.giveAll = ( callback ) => {
-    const allrecords = Todo.sequelize.query("SELECT * FROM Todos where id like `%`" , {
-        type: sequelize.QueryTypes.SELECT
-    });
-    allrecords.then( result => {
-        console.log(result);
+exports.alldata = ( data, callback ) => {
+    ToDo.findAll().then( result => {
         callback( null,result);
     }).catch( error => {
         callback( error,null);
-    })
+    });
 };

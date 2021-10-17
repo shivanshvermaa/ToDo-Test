@@ -24,7 +24,7 @@ const dbconfigs = {
   "awsConfig ": {
     "username": process.env.RDS_USERNAME || "root",
     "password": process.env.RDS_PASSWORD || "root",
-    "database": process.env.RDS_DB_NAME || "expressstodo"  ,
+    "database": process.env.RDS_DB_NAME || "expresstodo"  ,
     "host": process.env.RDS_HOSTNAME || "127.0.0.1",
     "dialect": "mysql"
   }
