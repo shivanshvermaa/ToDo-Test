@@ -3,9 +3,9 @@ const Sequelize = require("sequelize");
 
 const ToDoModel = require("../ToDo/todo.model.js");
 
-const sequelize = new Sequelize( dbConfig.development.database , dbConfig.development.username , dbConfig.development.password ,{
-    host: dbConfig.development.host,
-    dialect: dbConfig.development.dialect,
+const sequelize = new Sequelize( dbConfig["awsConfig "].database , dbConfig["awsConfig "].username , dbConfig["awsConfig "].password ,{
+    host: dbConfig["awsConfig "].host,
+    dialect: dbConfig["awsConfig "].dialect,
     operatorsAliases: 0,
 });
 
