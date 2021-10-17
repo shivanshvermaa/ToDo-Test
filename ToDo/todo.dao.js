@@ -41,6 +41,7 @@ exports.giveAll = ( callback ) => {
         type: sequelize.QueryTypes.SELECT
     });
     allrecords.then( result => {
+        console.log(result);
         callback( null,result);
     }).catch( error => {
         callback( error,null);
