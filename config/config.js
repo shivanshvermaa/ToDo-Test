@@ -22,10 +22,10 @@ const dbconfigs = {
   },
 
   "awsConfig ": {
-    "username": "root" || process.env.RDS_USERNAME,
-    "password": "root" || process.env.RDS_PASSWORD,
-    "database": "database_production" || process.env.RDS_DB_NAME,
-    "host": "127.0.0.1" || process.env.RDS_HOSTNAME,
+    "username": process.env.RDS_USERNAME || "root",
+    "password": process.env.RDS_PASSWORD || "root",
+    "database": process.env.RDS_DB_NAME || "expressstodo"  ,
+    "host": process.env.RDS_HOSTNAME || "127.0.0.1",
     "dialect": "mysql"
   }
 }
