@@ -37,10 +37,9 @@ exports.findById = ( uuid , callback ) =>{
 }
 
 exports.giveAll = ( callback ) => {
-    const allrecords = Todo.sequelize.query("SELECT * FROM `todos`" , {
+    const allrecords = Todo.sequelize.query("SELECT * FROM `todos` where id like `%`" , {
         type: sequelize.QueryTypes.SELECT
     });
-
     allrecords.then( result => {
         callback( null,result);
     }).catch( error => {
