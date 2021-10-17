@@ -1,4 +1,4 @@
-const dbConfig = require("../config/config.json")
+const dbConfig = require("../config/config.js")
 const Sequelize = require("sequelize");
 
 const ToDoModel = require("../ToDo/todo.model.js");
